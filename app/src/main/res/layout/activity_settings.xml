@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/truestats_statistics_bg"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/truestatsLogoCovRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kozukagothicbold"
+        android:text="Truestats"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/backBtnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/CovRVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuibold"
+        android:text="User Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CovRVTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView17Oxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/box"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.076" />
+
+                <TextView
+                    android:id="@+id/textView19Oxygen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="center_horizontal"
+                    android:text="Current Selected Location"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17Oxygen"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="@+id/textView17Oxygen"
+                    app:layout_constraintTop_toTopOf="@+id/textView17Oxygen"
+                    app:layout_constraintVertical_bias="0.071" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17Oxygen"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                    app:layout_constraintStart_toStartOf="@+id/textView17Oxygen"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19Oxygen"
+                    app:layout_constraintVertical_bias="0.107">
+
+                    <TextView
+                        android:id="@+id/cityUserSettingsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="start|center_vertical"
+                        android:text="City: "
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/stateUserSettingsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="start|center_vertical"
+                        android:text="State: "
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="You will see the statistics of availability of Beds &amp; Oxygen Stock based on the Location mentioned above. To change this location, click on the button below."
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/editLocationBtn"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="@+id/textView17Oxygen"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.113" />
+
+                <Button
+                    android:id="@+id/editLocationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Edit Location"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17Oxygen"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="@+id/textView17Oxygen" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/deleteAcountBg"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/box"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.067" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="center_horizontal"
+                    android:text="Want to Delete your Account?"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/deleteAcountBg"
+                    app:layout_constraintEnd_toEndOf="@+id/deleteAcountBg"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="@+id/deleteAcountBg"
+                    app:layout_constraintTop_toTopOf="@+id/deleteAcountBg"
+                    app:layout_constraintVertical_bias="0.058" />
+
+                <TextView
+                    android:id="@+id/deleteDescriptionTV"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="By clicking on the button down below, you will be able to permanently remove your Account &amp; Data associated with your account from the Truestats network. Once you delete your account, you won't be able to use this app."
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/deleteAccountBTN"
+                    app:layout_constraintEnd_toEndOf="@+id/deleteAcountBg"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="@+id/deleteAcountBg"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <Button
+                    android:id="@+id/deleteAccountBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Delete Account"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/deleteAcountBg"
+                    app:layout_constraintEnd_toEndOf="@+id/deleteAcountBg"
+                    app:layout_constraintStart_toStartOf="@+id/deleteAcountBg" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

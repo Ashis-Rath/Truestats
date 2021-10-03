@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "184864067818",
+    "firebase_url": "https://truestats-data-manager-default-rtdb.firebaseio.com",
+    "project_id": "truestats-data-manager",
+    "storage_bucket": "truestats-data-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184864067818:android:6005041be4aa8631f50793",
+        "android_client_info": {
+          "package_name": "com.ashisrath.tdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184864067818-j2rov20gg5eefjuu8s7g2ajrfmrb60g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtT18kk7mT4q07AsOA0j2Nhk1biEmKX_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184864067818-j2rov20gg5eefjuu8s7g2ajrfmrb60g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184864067818:android:0a63467fd72d6decf50793",
+        "android_client_info": {
+          "package_name": "com.ashisrath.truestats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184864067818-j2rov20gg5eefjuu8s7g2ajrfmrb60g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtT18kk7mT4q07AsOA0j2Nhk1biEmKX_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184864067818-j2rov20gg5eefjuu8s7g2ajrfmrb60g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
